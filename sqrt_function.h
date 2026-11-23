@@ -1,10 +1,10 @@
 template <typename number = float,typename integer =unsigned short>
-number sqrt_game(number __l,integer max_attemps = 10,number __eq=0.01)
+number custom_sqrt(number __l,integer max_attemps = 10,number __eq=0.01)
 {
     //__l E [min_value,max_value]
     number max_value = (__l>=1)? __l: 1,
     min_value  = 0,med_value =0;
-    //set sqrt_game(0) = 0
+    //set custom_sqrt(0) = 0
     if(__l ==0 ) return 0 ;
     //
     const number result_square = __l*__l;
